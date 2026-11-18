@@ -39,10 +39,10 @@
 
 ## 从源码编译
 
-下载或克隆本仓库，在 Windows 上打开 PowerShell，进入仓库目录后运行以下命令。脚本使用 Windows .NET Framework 的 C# 编译器与 WPF 库，输出路径必须是尚不存在的 `.exe` 文件。
+下载或克隆本仓库，在 Windows 上打开 PowerShell，进入仓库目录后运行以下命令。脚本使用 Windows .NET Framework 的 C# 编译器与 WPF 库，输出路径必须是尚不存在的 `.exe` 文件。`-ExecutionPolicy Bypass` 只在这次启动的 PowerShell 进程中生效。
 
 ```powershell
-& '.\源码\打包新版.ps1' -OutputPath '.\IssuePocket-v2.2.4.exe'
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File '.\源码\打包新版.ps1' -OutputPath '.\IssuePocket-v2.2.4.exe'
 ```
 
 当前版本的界面和启动入口在 `源码/现代界面`，数据存储及搜索代码在 `源码` 根目录。用于读取剪贴板 HTML 的 HtmlAgilityPack 已随源码附带，打包时会嵌入 EXE。
