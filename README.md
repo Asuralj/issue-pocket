@@ -4,6 +4,12 @@
 
 问题随手记是一个 Windows 本地工具，用来记录开发中遇到的问题、复现过程、跟进进展和处理结果。可以把截图、日志等文件放在同一条记录里，之后按关键词、分类或状态找回。
 
+**IssuePocket** is an offline issue log for Windows. Press `Ctrl + Alt + J` while it’s running to log a bug, paste a screenshot or attach a log, and record the fix so you can find it later. Your records stay on your computer. The interface is in Simplified Chinese.
+
+[Download the Windows EXE](https://github.com/Asuralj/issue-pocket/releases/download/v2.2.4/IssuePocket-v2.2.4.exe) · [Noncommercial license](LICENSE)
+
+![IssuePocket showing a sample issue with an XML code block, an attachment, and a resolution](docs/screenshots/issue-pocket.png)
+
 ## 下载和运行
 
 1. 到 [v2.2.4 发布页](https://github.com/Asuralj/issue-pocket/releases/tag/v2.2.4)，在 **Assets** 中下载 `IssuePocket-v2.2.4.exe`。
